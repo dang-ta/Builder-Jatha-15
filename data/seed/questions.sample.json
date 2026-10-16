@@ -1,0 +1,38 @@
+[
+  {
+    "id": "kin-001",
+    "chapter": "kinematics",
+    "concepts": ["uniform-acceleration", "equations-of-motion"],
+    "difficulty": 1,
+    "source": "illustrative",
+    "text": {
+      "en": "A car starts from rest and accelerates uniformly at 2 m/s^2 for 5 s. How far does it travel?",
+      "pa": "ਇੱਕ ਕਾਰ ਆਰਾਮ ਦੀ ਸਥਿਤੀ ਤੋਂ 2 m/s² ਦੇ ਇੱਕਸਾਰ ਪ੍ਰਵੇਗ ਨਾਲ 5 ਸਕਿੰਟ ਤੱਕ ਚੱਲਦੀ ਹੈ। ਇਹ ਕਿੰਨੀ ਦੂਰੀ ਤੈਅ ਕਰਦੀ ਹੈ?"
+    },
+    "answer": { "value": 25, "unit": "m", "tolerance": 0.01 },
+    "common_mistakes": ["uses s = ut and gets 0", "forgets the 1/2 and gets 50"],
+    "solution_steps": [
+      { "en": "Use s = ut + (1/2)at^2 with u = 0, a = 2, t = 5.", "pa": "s = ut + (1/2)at² ਵਰਤੋ, ਜਿੱਥੇ u = 0, a = 2, t = 5।" },
+      { "en": "s = 0 + 0.5 x 2 x 25 = 25 m.", "pa": "s = 0 + 0.5 × 2 × 25 = 25 m।" }
+    ],
+    "verification": { "check": "answer = 0.5 * 2 * 5**2", "status": "unverified", "reviewed_by": null }
+  },
+  {
+    "id": "kin-002",
+    "chapter": "kinematics",
+    "concepts": ["vertical-motion", "equations-of-motion"],
+    "difficulty": 1,
+    "source": "illustrative",
+    "text": {
+      "en": "A ball is thrown straight up at 20 m/s (take g = 10 m/s^2). What maximum height does it reach?",
+      "pa": "ਇੱਕ ਗੇਂਦ ਨੂੰ 20 m/s ਦੀ ਗਤੀ ਨਾਲ ਸਿੱਧਾ ਉੱਪਰ ਸੁੱਟਿਆ ਜਾਂਦਾ ਹੈ (g = 10 m/s² ਲਓ)। ਗੇਂਦ ਵੱਧ ਤੋਂ ਵੱਧ ਕਿੰਨੀ ਉਚਾਈ ਤੱਕ ਜਾਵੇਗੀ?"
+    },
+    "answer": { "value": 20, "unit": "m", "tolerance": 0.01 },
+    "common_mistakes": ["uses v^2/g and gets 40", "treats g as positive upward"],
+    "solution_steps": [
+      { "en": "At the top v = 0. Use v^2 = u^2 - 2gh.", "pa": "ਸਿਖਰ 'ਤੇ v = 0 ਹੁੰਦਾ ਹੈ। v² = u² − 2gh ਵਰਤੋ।" },
+      { "en": "h = u^2 / 2g = 400 / 20 = 20 m.", "pa": "h = u² / 2g = 400 / 20 = 20 m।" }
+    ],
+    "verification": { "check": "answer = 20**2 / (2 * 10)", "status": "unverified", "reviewed_by": null }
+  }
+]
